@@ -15,7 +15,11 @@ const UtilsShadow = lazy(() => import('../views/utilities/shadow'));
 const UtilsMaterialIcons = lazy(() => import('../views/utilities/icons/MaterialIcons'));
 const UtilsTablerIcons = lazy(() => import('../views/utilities/icons/TablerIcons'));
 
-const SamplePage = lazy(() => import('../views/sample-page'));
+const Counting = lazy(() => import('../views/counting'));
+const Environment = lazy(() => import('../views/environment'));
+const Connectivity = lazy(() => import('../views/connectivity'));
+const Safety = lazy(() => import('../views/safety'));
+const Fullview = lazy(() => import('../views/fullview'));
 
 const MainRoutes = () => {
     const location = useLocation();
@@ -34,7 +38,12 @@ const MainRoutes = () => {
                 '/icons/tabler-icons',
                 '/icons/material-icons',
 
-                '/sample-page'
+
+                '/counting',
+                '/environment',
+                '/connectivity',
+                '/safety',
+                '/fullview'
             ]}
         >
             <MainLayout showBreadcrumb={true}>
@@ -50,8 +59,12 @@ const MainRoutes = () => {
                         <Route path="/icons/tabler-icons" component={UtilsTablerIcons} />
                         <Route path="/icons/material-icons" component={UtilsMaterialIcons} />
 
-                        <Route path="/sample-page" component={SamplePage} />
-
+                        <Route path="/counting" component={Counting} />
+                        <Route path="/environment" component={Environment} />
+                        <Route path="/connectivity" component={Connectivity} />
+                        <Route path="/safety" component={Safety} />
+                        <Route path="/fullview" component={Fullview} />
+                        
                 </Switch>
             </MainLayout>
         </Route>

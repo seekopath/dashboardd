@@ -13,7 +13,7 @@ const chartData = {
                 enabled: true
             }
         },
-        colors: [value['blue200'], value['blue500'], value['deepPurple500'], value['deepPurple50']],
+        colors: [value['blue200'], value['blue500'], value['blue800'], value['deepPurple200'], value['deepPurple500'], value['deepPurple800']],
         responsive: [
             {
                 breakpoint: 480,
@@ -79,20 +79,28 @@ const chartData = {
     },
     series: [
         {
-            name: 'Investment',
+            name: 'Pedestrians',
             data: [32, 124, 32, 32, 32, 80, 32]
         },
         {
-            name: 'Loss',
+            name: 'Bikes',
             data: [32, 15, 15, 32, 64, 38, 78]
         },
         {
-            name: 'Profit',
+            name: 'Cars',
             data: [32, 145, 32, 32, 19, 102, 100]
         },
         {
-            name: 'Maintenance',
-            data: [0, 0, 0, 0, 0, 132]
+            name: 'PM 2.5',
+            data: [28, 22, 38, 54, 20, 61]
+        },
+        {
+            name: 'CO2 /PPM',
+            data: [221, 189, 232, 289, 119, 202, 290]
+        },
+        {
+            name: 'Temperature',
+            data: [7, 5, 8, 2, 4, 12]
         }
     ]
 };

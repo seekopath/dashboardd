@@ -8,16 +8,17 @@ import Carousel from 'react-material-ui-carousel';
 //import Auth0Login from './Auth0Login';
 import FirebaseLogin from './FirebaseLogin';
 
-import logo from './../../../../assets/images/logo.svg';
-import AuthPattern from './../../../../assets/images/auth/auth-pattern.svg';
+import logo from './../../../../assets/images/logo1.png';
+import AuthPattern from './../../../../assets/images/auth/4850037.jpg';
 import AuthBlue from './../../../../assets/images/auth/auth-blue.svg';
 import AuthPurple from './../../../../assets/images/auth/auth-purple.svg';
-import AuthBlueCard from './../../../../assets/images/auth/auth-blue-card.svg';
-import AuthPurpleCard from './../../../../assets/images/auth/auth-purple-card.svg';
+import AuthBlueCard from './../../../../assets/images/auth/embassy.svg';
+import AuthPurpleCard from './../../../../assets/images/auth/business-report.svg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor: theme.palette.primary.light,
+        
         height: '100%',
         minHeight: '100vh',
         width: '100%'
@@ -61,7 +62,8 @@ const useStyles = makeStyles((theme) => ({
         borderColor: theme.palette.purple.light,
         '&:hover': {
             borderColor: theme.palette.primary.light,
-            backgroundColor: theme.palette.primary.light
+            //backgroundColor: theme.palette.primary.light,
+            backgroundImage: `url(${AuthBlue})`
         }
     },
     indicator: {
@@ -115,7 +117,7 @@ const useStyles = makeStyles((theme) => ({
             top: '32%',
             left: '40%',
             width: '313px',
-            backgroundSize: '380px',
+            backgroundSize: '120px',
             height: '280px',
             backgroundImage: `url(${AuthPurpleCard})`,
             backgroundRepeat: 'no-repeat',
@@ -129,7 +131,7 @@ const useStyles = makeStyles((theme) => ({
             left: '37%',
             width: '243px',
             height: '210px',
-            backgroundSize: '380px',
+            backgroundSize: '180px',
             backgroundImage: `url(${AuthBlueCard})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
@@ -159,16 +161,16 @@ const Login = () => {
 
     const items = [
         {
-            title: 'Components Based Design System',
-            description: 'Powerfull and easy to use multipurpose theme'
+            title: 'Specially Built for City Municipalities ',
+            description: 'Designed to work as a backbone for the government.'
         },
         {
-            title: 'Components Based Design System',
-            description: 'Powerfull and easy to use multipurpose theme'
+            title: 'Highly scalable',
+            description: 'Supports all forms of sensors and a variety of data streams.'
         },
         {
-            title: 'Components Based Design System',
-            description: 'Powerfull and easy to use multipurpose theme'
+            title: 'Open dashboard',
+            description: 'No 3rd parties involved. Control directly under the government.'
         }
     ];
 
@@ -186,15 +188,21 @@ const Login = () => {
                                     justifyContent={matchDownSM ? 'center' : 'space-between'}
                                 >
                                     <Grid item>
-                                        <Grid container direction="column" spacing={1}>
+                                        <Grid container direction="column" spacing={2}>
                                             <Grid item container direction="column" alignItems={matchDownSM && 'center'}>
-                                                <Grid item>
+                                                <Grid item className={classes.icon}>
+                                                    <RouterLink to="#">
+                                                    <img alt="Auth method" src={logo} width="100" alignItems="center"/>
+                                                    </RouterLink>
+                                                    
+                                                </Grid>     
+                                            <Grid item>
                                                     <Typography
                                                         color={theme.palette.purple.main}
                                                         gutterBottom
                                                         variant={matchDownSM ? 'h3' : 'h2'}
                                                     >
-                                                        Hi, Welcome Back
+                                                        Hey, what's up?
                                                     </Typography>
                                                 </Grid>
                                                 <Grid item>
@@ -210,11 +218,7 @@ const Login = () => {
                                             </Grid> */}
                                         </Grid>
                                     </Grid>
-                                    <Grid item className={classes.icon}>
-                                        <RouterLink to="#">
-                                            <img alt="Auth method" src={logo} width="100" />
-                                        </RouterLink>
-                                    </Grid>
+
                                 </Grid>
                             </Grid>
                             <Grid item xs={12}>

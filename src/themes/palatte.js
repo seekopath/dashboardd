@@ -30,6 +30,7 @@ export function themePalatte(navObject) {
             200: value.deepPurple200,
             800: value.deepPurple800
         },
+
         error: {
             light: value.red200,
             main: value.red500,

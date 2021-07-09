@@ -18,6 +18,8 @@ import createCache from '@emotion/cache';
 import {create} from 'jss';
 import rtl from 'jss-rtl';
 
+import {SocketContext, socket } from './context/socket'
+
 const jss = create({
     plugins: [...jssPreset().plugins, rtl()]
 });
@@ -50,23 +52,25 @@ const App = () => {
 
     return (
         <React.Fragment>
-            <StylesProvider jss={jss}>
-                <CacheProvider value={cacheRtl}>
-                    {messages && (
-                        <IntlProvider locale={customization.locale} defaultLocale="en" messages={messages}>
-                            <StyledEngineProvider injectFirst>
-                                <NavigationScroll>
-                                    <ThemeProvider theme={theme(customization)}>
-                                        <CssBaseline />
-                                            <Routes />
-                                            <Snackbar />
-                                    </ThemeProvider>
-                                </NavigationScroll>
-                            </StyledEngineProvider>
-                        </IntlProvider>
-                    )}
-                </CacheProvider>
-            </StylesProvider>
+            <SocketContext.Provider value={socket}>
+                <StylesProvider jss={jss}>
+                    <CacheProvider value={cacheRtl}>
+                        {messages && (
+                            <IntlProvider locale={customization.locale} defaultLocale="en" messages={messages}>
+                                <StyledEngineProvider injectFirst>
+                                    <NavigationScroll>
+                                        <ThemeProvider theme={theme(customization)}>
+                                            <CssBaseline />
+                                                <Routes />
+                                                <Snackbar />
+                                        </ThemeProvider>
+                                    </NavigationScroll>
+                                </StyledEngineProvider>
+                            </IntlProvider>
+                        )}
+                    </CacheProvider>
+                </StylesProvider>
+            </SocketContext.Provider>
         </React.Fragment>
     );
 };

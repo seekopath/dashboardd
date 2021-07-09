@@ -75,7 +75,7 @@
     "treeview": "Treeview",
 
     "pages": "Pages",
-    "pages-caption": "Prebuild Pages",
+    "pages-caption": "Detailed information",
     "authentication": "Authentication",
     "login": "Login",
     "register": "Register",
@@ -114,9 +114,13 @@
     "c": "C",
     "outlined": "Outlined",
 
-    "sample-page": "Sample Page",
+    "counting": "Counting",
+    "environment":"Environment",
+    "connectivity":"Connectivity",
+    "safety":"Safety",
     "documentation": "Documentation",
     "roadmap": "Roadmap",
+
 
     "title": "Multi Language",
     "home": "Home",
@@ -124,7 +128,6 @@
     "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
 
     "welcome": "Welcome",
-    "basic-berry-intro": "Berry Basic Intro",
     "quick-start": "Quick Start",
     "install-dependencies": "Install Dependencies",
     "install-start": "Start",

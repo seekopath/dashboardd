@@ -26,9 +26,9 @@ import {
 
 import {IconLogout, IconSearch, IconSettings} from '@tabler/icons';
 
-import UpgradePlanCard from '../../../../ui-component/cards/UpgradePlanCard';
+import BrandingCard from '../../../../ui-component/cards/BrandingCard';
 
-import User1 from './../../../../assets/images/users/user-round.svg';
+import Mats from './../../../../assets/images/users/mats.jpg';
 
 const useStyles = makeStyles((theme) => ({
     navContainer: {
@@ -150,7 +150,7 @@ const ProfileSection = () => {
                 className={classes.profileChip}
                 icon={
                     <Avatar
-                        src={User1}
+                        src={Mats}
                         className={classes.headerAvtar}
                         ref={anchorRef}
                         aria-controls={open ? 'menu-list-grow' : undefined}
@@ -192,13 +192,13 @@ const ProfileSection = () => {
                                     <CardContent className={classes.cardContent}>
                                         <Grid container direction="column" spacing={0}>
                                             <Grid item className={classes.flex}>
-                                                <Typography variant="h4">Good Morning,</Typography>
+                                                <Typography variant="h4">Good Morning, </Typography>
                                                 <Typography component="span" variant="h4" className={classes.name}>
-                                                    Kishan
+                                                    Mats
                                                 </Typography>
                                             </Grid>
                                             <Grid item>
-                                                <Typography variant="subtitle2">Project Admin</Typography>
+                                                <Typography variant="subtitle2">CEO, Umeå Energi</Typography>
                                             </Grid>
                                         </Grid>
                                         <OutlinedInput
@@ -220,7 +220,7 @@ const ProfileSection = () => {
                                         />
                                         <Divider />
                                         <PerfectScrollbar className={classes.ScrollHeight}>
-                                            <UpgradePlanCard />
+                                            <BrandingCard />
                                             <Divider />
                                             <Card className={classes.card}>
                                                 <CardContent>

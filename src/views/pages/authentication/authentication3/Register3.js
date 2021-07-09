@@ -4,7 +4,7 @@ import {Card, CardContent, Divider, Grid, Link, makeStyles, Typography, useMedia
 
 import FirebaseRgister from './../firebase-forms/FirebaseRgister';
 
-import logo from './../../../../assets/images/logo.svg';
+import logos from './../../../../assets/images/logos.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -61,7 +61,7 @@ const Register = () => {
                 >
                     <Grid item xs={12} sx={{mt: '40px', width: '100%', textAlign: 'center'}}>
                         <RouterLink to="#">
-                            <img alt="Auth method" src={logo} width="100" />
+                            <img alt="Auth method" src={logos} width="100" />
                         </RouterLink>
                     </Grid>
                     <Grid item xs={12} container justifyContent="center" alignItems="center">
@@ -130,13 +130,13 @@ const Register = () => {
                         spacing={matchDownSM ? 2 : 0}
                     >
                        <Grid item>
-                            <Typography component={Link} href='https://berrydashboard.io' target='_blanks' variant="subtitle1" color={theme.palette.grey[600]}>
-                                www.berrydashboard.io
+                            <Typography component={Link} href='https://allas.network' target='_blanks' variant="subtitle1" color={theme.palette.grey[600]}>
+                                https://www.allas.network
                             </Typography>
                         </Grid>
                         <Grid item>
-                            <Typography component={Link} href='https://codedthemes.com' target='_blanks' variant="subtitle1" color={theme.palette.grey[600]}>
-                                &copy; codedthemes.com
+                            <Typography component={Link} href='https://allas.network' target='_blanks' variant="subtitle1" color={theme.palette.grey[600]}>
+                                &copy; https://allas.network
                             </Typography>
                         </Grid>
                     </Grid>

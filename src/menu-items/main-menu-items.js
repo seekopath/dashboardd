@@ -46,7 +46,12 @@ import {
     IconTools,
     IconTypography,
     IconUser,
-    IconUserCheck
+    IconUserCheck,
+    IconTrees,
+    IconCalculator,
+    IconLink,
+    IconShieldCheck,
+    IconSettings
 } from '@tabler/icons';
 
 const icons = {
@@ -96,7 +101,12 @@ const icons = {
     IconBellRinging: IconBellRinging,
     IconBorderAll: IconBorderAll,
     IconChartCandle: IconChartCandle,
-    IconBasket: IconBasket
+    IconBasket: IconBasket,
+    IconTrees: IconTrees,
+    IconCalculator: IconCalculator,
+    IconLink: IconLink,
+    IconShieldCheck: IconShieldCheck,
+    IconSettings: IconSettings
 };
 
 const menuItems = {
@@ -108,7 +118,7 @@ const menuItems = {
             children: [
                 {
                     id: 'dash-default',
-                    title: <FormattedMessage id="default" />,
+                    title: <FormattedMessage id="Landing" />,
                     type: 'item',
                     url: '/dashboard/default',
                     icon: icons['IconDashboard'],
@@ -117,6 +127,7 @@ const menuItems = {
             ]
         },
 
+        
         {
             id: 'pages',
             title: <FormattedMessage id="pages" />,
@@ -124,100 +135,39 @@ const menuItems = {
             type: 'group',
             children: [
                 {
-                    id: 'authentication',
-                    title: <FormattedMessage id="authentication" />,
-                    type: 'collapse',
-                    icon: icons['IconKey'],
-                    children: [
-
-
-
-
-                                {
-                                    id: 'login3',
-                                    title: <FormattedMessage id="login" />,
-                                    type: 'item',
-                                    url: '/pages/login/login3',
-                                    target: true
-                                },
-                                {
-                                    id: 'register3',
-                                    title: <FormattedMessage id="register" />,
-                                    type: 'item',
-                                    url: '/pages/register/register3',
-                                    target: true
-                                }
-
-
-
-
-
-
-                    ]
-                },
-
-
-
-            ]
-        },
-        {
-            id: 'utilities',
-            title: <FormattedMessage id="utilities" />,
-            type: 'group',
-            children: [
-                {
-                    id: 'util-typography',
-                    title: <FormattedMessage id="typography" />,
+                    id: 'counting',
+                    title: <FormattedMessage id="counting" />,
                     type: 'item',
-                    url: '/utils/util-typography',
-                    icon: icons['IconTypography']
+                    url: '/counting',
+                    icon: icons['IconCalculator']
                 },
                 {
-                    id: 'color',
-                    title: <FormattedMessage id="color" />,
+                    id: 'environment',
+                    title: <FormattedMessage id="environment" />,
                     type: 'item',
-                    url: '/utils/util-color',
-                    icon: icons['IconPalette']
+                    url: '/environment',
+                    icon: icons['IconTrees']
                 },
                 {
-                    id: 'shadow',
-                    title: <FormattedMessage id="shadow" />,
+                    id: 'connectivity',
+                    title: <FormattedMessage id="connectivity" />,
                     type: 'item',
-                    url: '/utils/util-shadow',
-                    icon: icons['IconShadow']
+                    url: '/connectivity',
+                    icon: icons['IconLink']
                 },
                 {
-                    id: 'icons',
-                    title: <FormattedMessage id="icons" />,
-                    type: 'collapse',
-                    icon: icons['IconPencil'],
-                    children: [
-                        {
-                            id: 'util-tabler-icons',
-                            title: <FormattedMessage id="tabler-icons" />,
-                            type: 'item',
-                            url: '/icons/tabler-icons'
-                        },
-                        {
-                            id: 'util-material-icons',
-                            title: <FormattedMessage id="material-icons" />,
-                            type: 'item',
-                            url: '/icons/material-icons'
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            id: 'sample-docs-roadmap',
-            type: 'group',
-            children: [
-                {
-                    id: 'sample-page',
-                    title: <FormattedMessage id="sample-page" />,
+                    id: 'safety',
+                    title: <FormattedMessage id="safety" />,
                     type: 'item',
-                    url: '/sample-page',
-                    icon: icons['IconBrandChrome']
+                    url: '/safety',
+                    icon: icons['IconShieldCheck']
+                },
+                {
+                    id: 'fullview',
+                    title: <FormattedMessage id="fullview" />,
+                    type: 'item',
+                    url: '/fullview',
+                    icon: icons['IconTrees']
                 },
                 {
                     id: 'documentation',

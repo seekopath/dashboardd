@@ -7,7 +7,7 @@ import MenuList from './MenuList';
 import LogoSection from '../LogoSection';
 
 import {drawerWidth} from './../../../store/constant';
-import UpgradePlanCard from '../../../ui-component/cards/UpgradePlanCard';
+import BrandingCard from '../../../ui-component/cards/BrandingCard';
 
 const useStyles = makeStyles((theme) => ({
     drawer: {
@@ -56,7 +56,7 @@ const Sidebar = (props) => {
             </Hidden>
             <PerfectScrollbar className={classes.ScrollHeight}>
                 <MenuList />
-                <UpgradePlanCard/>
+                <BrandingCard/>
             </PerfectScrollbar>
         </React.Fragment>
     );

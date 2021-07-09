@@ -107,3 +107,26 @@ body .rdw-editor-toolbar,
 #simple-popper[role="tooltip"]{
     z-index: 1201;
 }
+
+.mapboxgl-canvas {
+    border-radius: 1rem;
+}
+  
+.mapboxgl-control-container{
+    display: none;
+}
+
+.map-container{
+    position: relative;
+    z-index: 20;
+}
+.map-containerr{
+    position: relative;
+    z-index: 20;
+    height: 40rem!important;
+}
+.map-containerrr{
+    position: relative;
+    z-index: 20;
+    height: 80vh!important;
+}

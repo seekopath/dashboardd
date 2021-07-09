@@ -130,13 +130,13 @@ const Login = () => {
                         spacing={matchDownSM ? 2 : 0}
                     >
                         <Grid item>
-                            <Typography component={Link} href='https://berrydashboard.io' target='_blanks' variant="subtitle1" color={theme.palette.grey[600]}>
-                                www.berrydashboard.io
+                            <Typography component={Link} href='https://allas.network' target='_blanks' variant="subtitle1" color={theme.palette.grey[600]}>
+                                www.allas.network
                             </Typography>
                         </Grid>
                         <Grid item>
-                            <Typography component={Link} href='https://codedthemes.com' target='_blanks' variant="subtitle1" color={theme.palette.grey[600]}>
-                                &copy; codedthemes.com
+                            <Typography component={Link} href='https://allas.network' target='_blanks' variant="subtitle1" color={theme.palette.grey[600]}>
+                                &copy; www.allas.network
                             </Typography>
                         </Grid>
                     </Grid>

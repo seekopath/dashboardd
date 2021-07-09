@@ -17,7 +17,15 @@ const SubCard = ({title, children, darkTitle, contentClass, secondary}) => {
             {!darkTitle && title && <CardHeader title={<Typography variant="h5">{title}</Typography>} action={secondary} />}
             {darkTitle && title && <CardHeader title={<Typography variant="h4">{title}</Typography>} />}
             {title && <Divider sx={{borderColor: 'primary.light'}} />}
-            <CardContent className={contentClass}>{children}</CardContent>
+            <CardContent className={contentClass}>{children}
+                <Typography variant="H2" className={contentClass}>
+                    Custom Feature Page
+                </Typography>
+                <br/>
+                <Typography variant="H4" className={contentClass}>
+                    This page is reserved for custom features requested by the clients
+                </Typography>
+            </CardContent>
         </Card>
     );
 };

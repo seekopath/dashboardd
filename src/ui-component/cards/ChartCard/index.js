@@ -37,10 +37,10 @@ const ChartCard = () => {
                             <Grid item>
                                 <Grid container direction="column" spacing={1}>
                                     <Grid item>
-                                        <Typography variant="subtitle2">Total Growth</Typography>
+                                        <Typography variant="subtitle1">Total Objects on street</Typography>
                                     </Grid>
                                     <Grid item>
-                                        <Typography variant="h3">$2,324.00</Typography>
+                                        <Typography variant="h2">937</Typography>
                                     </Grid>
                                 </Grid>
                             </Grid>

@@ -31,8 +31,11 @@ import {
 
 import PerfectScrollbar from 'react-perfect-scrollbar';
 
-import {IconBell, IconBrandTelegram, IconBuildingStore, IconMailbox, IconPhoto} from '@tabler/icons';
+import {IconBell, IconBrandTelegram, IconBuildingStore, IconMailbox, IconPhoto, IconZoomCheck} from '@tabler/icons';
 import User1 from './../../../../assets/images/users/user-round.svg';
+import Petter from './../../../../assets/images/users/petter.jpg';
+import Mats from './../../../../assets/images/users/mats.jpg';
+import Priyanshu from './../../../../assets/images/users/priyanshu.jpg';
 
 const useStyles = makeStyles((theme) => ({
     navContainer: {
@@ -179,8 +182,8 @@ const status = [
         label: 'Unread'
     },
     {
-        value: 'other',
-        label: 'Other'
+        value: 'important',
+        label: 'Important'
     }
 ];
 
@@ -310,11 +313,11 @@ const NotificationSection = () => {
                                                                 <div className={classes.itemaction}>
                                                                     <ListItem alignItems="center" className={classes.listItem}>
                                                                         <ListItemAvatar>
-                                                                            <Avatar alt="John Doe" src={User1} />
+                                                                            <Avatar alt="John Doe" src={Petter} />
                                                                         </ListItemAvatar>
                                                                         <ListItemText
                                                                             primary={
-                                                                                <Typography variant="subtitle1">Kishan Pandav</Typography>
+                                                                                <Typography variant="subtitle1">Petter Hauffman</Typography>
                                                                             }
                                                                         />
                                                                         <ListItemSecondaryAction className={classes.listAction}>
@@ -326,7 +329,7 @@ const NotificationSection = () => {
                                                                                         gutterBottom
                                                                                         className={classes.actionColor}
                                                                                     >
-                                                                                        2 min ago
+                                                                                        A while ago
                                                                                     </Typography>
                                                                                 </Grid>
                                                                             </Grid>
@@ -335,8 +338,8 @@ const NotificationSection = () => {
                                                                     <Grid container direction="column" className={classes.listContainer}>
                                                                         <Grid item xs={12} className={classes.paddingBottom}>
                                                                             <Typography variant="subtitle2">
-                                                                                It is a long established fact that a reader will be
-                                                                                distracted
+                                                                                Hope you like the new features pushed yesterday on 
+                                                                                Device #243                                                                                
                                                                             </Typography>
                                                                         </Grid>
                                                                         <Grid item xs={12}>
@@ -359,13 +362,13 @@ const NotificationSection = () => {
                                                                     <ListItem alignItems="center" className={classes.listItem}>
                                                                         <ListItemAvatar>
                                                                             <Avatar className={classes.listAvatarSuccess}>
-                                                                                <IconBuildingStore stroke={1.5} size="1.3rem" />
+                                                                                <IconZoomCheck stroke={1.5} size="1.3rem" />
                                                                             </Avatar>
                                                                         </ListItemAvatar>
                                                                         <ListItemText
                                                                             primary={
                                                                                 <Typography variant="subtitle1">
-                                                                                    Store Verification Done
+                                                                                    Device Verification Done
                                                                                 </Typography>
                                                                             }
                                                                         />
@@ -378,7 +381,7 @@ const NotificationSection = () => {
                                                                                         gutterBottom
                                                                                         className={classes.actionColor}
                                                                                     >
-                                                                                        2 min ago
+                                                                                        A while ago
                                                                                     </Typography>
                                                                                 </Grid>
                                                                             </Grid>
@@ -387,7 +390,7 @@ const NotificationSection = () => {
                                                                     <Grid container direction="column" className={classes.listContainer}>
                                                                         <Grid item xs={12} className={classes.paddingBottom}>
                                                                             <Typography variant="subtitle2">
-                                                                                We have sucessfully recieved your request.
+                                                                                Sucessfully received your request for maintainence of Device #231.
                                                                             </Typography>
                                                                         </Grid>
                                                                         <Grid item xs={12}>
@@ -435,8 +438,8 @@ const NotificationSection = () => {
                                                                     <Grid container direction="column" className={classes.listContainer}>
                                                                         <Grid item xs={12} className={classes.paddingBottom}>
                                                                             <Typography variant="subtitle2">
-                                                                                All done! Now check your inbox as you're in for a sweet
-                                                                                treat!
+                                                                                Verification sent to mail! Check your inbox to 
+                                                                                give access to new users from your organization!
                                                                             </Typography>
                                                                         </Grid>
                                                                         <Grid item xs={12}>
@@ -463,10 +466,10 @@ const NotificationSection = () => {
                                                                 <div className={classes.itemaction}>
                                                                     <ListItem alignItems="center" className={classes.listItem}>
                                                                         <ListItemAvatar>
-                                                                            <Avatar alt="Jone Doe" src={User1} />
+                                                                            <Avatar alt="Priyanshu" src={Priyanshu} />
                                                                         </ListItemAvatar>
                                                                         <ListItemText
-                                                                            primary={<Typography variant="subtitle1">Jone Doe</Typography>}
+                                                                            primary={<Typography variant="subtitle1">Priyanshu Pareek</Typography>}
                                                                         />
                                                                         <ListItemSecondaryAction className={classes.listAction}>
                                                                             <Grid container justifyContent="flex-end">
